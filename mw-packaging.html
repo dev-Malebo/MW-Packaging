@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MW Packaging | Packaging Supply Store — Mahikeng</title>
+  <meta name="description" content="MW Packaging Mahikeng — packaging supply store in Industrial Sites. Boxes, bubble wrap, tape, courier bags and more. 4.4★ on Google. Call 071 283 4789.">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --ink: #2a1f14;
+      --ink-soft: #5a4a3a;
+      --ink-muted: #8a7a6a;
+      --bg: #faf7f2;
+      --bg-warm: #f5f0e8;
+      --card: #ffffff;
+      --card-hover: #fdfbf8;
+      --border: #e8e0d2;
+      --border-strong: #d4c8b2;
+      --kraft: #b8845a;
+      --kraft-dim: #9a6c46;
+      --kraft-soft: #f5e8dc;
+      --kraft-pale: #faf1e8;
+      --box: #8b5a2b;
+      --box-soft: #f0e0cc;
+      --gold: #d4a017;
+      --white: #ffffff;
+      --green: #3a7d44;
+      --green-soft: #e3f2e5;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3, h4 {
+      font-family: 'Archivo', 'Inter', sans-serif;
+      font-weight: 800;
+      line-height: 1.12;
+      letter-spacing: -0.02em;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    /* ===== NAV ===== */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(250, 247, 242, 0.95);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+    }
+    nav .inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .logo-mark {
+      width: 44px;
+      height: 44px;
+      background: var(--box);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--kraft-pale);
+      font-family: 'Archivo', sans-serif;
+      font-weight: 900;
+      font-size: 1.15rem;
+      flex-shrink: 0;
+      letter-spacing: -0.02em;
+      position: relative;
+      overflow: hidden;
+    }
+    .logo-mark::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 30%;
+      background: rgba(0,0,0,0.15);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .logo-text {
+      line-height: 1.15;
+    }
+    .logo-text strong {
+      font-family: 'Archivo', sans-serif;
+      font-weight: 900;
+      font-size: 1rem;
+      color: var(--ink);
+      display: block;
+      letter-spacing: -0.02em;
+    }
+    .logo-text small {
+      font-size: 0.6rem;
+      color: var(--kraft);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    .nav-links {
+      display: flex;
+      gap: 26px;
+      align-items: center;
+    }
+    .nav-links a {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--ink-soft);
+      transition: color 0.2s;
+      letter-spacing: 0.02em;
+    }
+    .nav-links a:hover { color: var(--box); }
+    .nav-cta {
+      background: var(--box);
+      color: var(--white) !important;
+      padding: 11px 22px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.78rem;
+      transition: all 0.2s;
+      letter-spacing: 0.03em;
+      box-shadow: 0 4px 12px rgba(139, 90, 43, 0.25);
+    }
+    .nav-cta:hover {
+      background: var(--kraft-dim);
+      transform: translateY(-1px);
+      box-shadow: 0 8px 18px rgba(139, 90, 43, 0.35);
+    }
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: var(--box);
+      cursor: pointer;
+      padding: 4px;
+    }
+    /* ===== HERO ===== */
+    .hero {
+      padding: 150px 24px 90px;
+      position: relative;
+      overflow: hidden;
+      background: var(--bg-warm);
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: -150px; right: -150px;
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(139, 90, 43, 0.08), transparent 70%);
+      pointer-events: none;
+    }
+    .hero-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 60px;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--box);
+      font-weight: 800;
+      background: var(--kraft-soft);
+      padding: 8px 18px;
+      border-radius: 40px;
+      margin-bottom: 28px;
+    }
+    .hero-tag::before {
+      content: "📦";
+      font-size: 0.95rem;
+    }
+    .hero h1 {
+      font-size: clamp(2.4rem, 5.5vw, 4rem);
+      margin-bottom: 24px;
+      letter-spacing: -0.03em;
+      line-height: 1.05;
+      color: var(--ink);
+    }
+    .hero h1 span {
+      color: var(--box);
+      position: relative;
+      display: inline-block;
+    }
+    .hero h1 span::after {
+      content: "";
+      position: absolute;
+      bottom: 4px;
+      left: 0;
+      width: 100%;
+      height: 8px;
+      background: var(--kraft-soft);
+      z-index: -1;
+      border-radius: 3px;
+    }
+    .hero-sub {
+      font-size: 1.05rem;
+      color: var(--ink-soft);
+      max-width: 560px;
+      margin-bottom: 36px;
+      line-height: 1.7;
+    }
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 48px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 28px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 0.88rem;
+      transition: all 0.2s;
+      cursor: pointer;
+      border: none;
+      letter-spacing: 0.02em;
+    }
+    .btn-primary {
+      background: var(--box);
+      color: var(--white);
+      box-shadow: 0 6px 18px rgba(139, 90, 43, 0.3);
+    }
+    .btn-primary:hover {
+      background: var(--kraft-dim);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(139, 90, 43, 0.4);
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--ink);
+      border: 1.5px solid var(--border-strong);
+    }
+    .btn-outline:hover {
+      border-color: var(--box);
+      background: var(--card);
+      color: var(--box);
+    }
+    .hero-trust {
+      display: flex;
+      gap: 32px;
+      flex-wrap: wrap;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+    }
+    .hero-trust-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.82rem;
+      color: var(--ink-soft);
+    }
+    .hero-trust-item strong {
+      color: var(--ink);
+      font-weight: 800;
+      font-family: 'Archivo', sans-serif;
+    }
+    .hero-trust-icon { color: var(--box); font-size: 1.1rem; }
+    .hero-stars { color: var(--gold); letter-spacing: 2px; }
+    /* Hero visual — packaging cards */
+    .hero-visual {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .pkg-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px 22px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      transition: all 0.25s;
+      box-shadow: 0 2px 8px rgba(42, 31, 20, 0.04);
+    }
+    .pkg-card:hover {
+      transform: translateX(-6px);
+      border-color: var(--border-strong);
+      box-shadow: 0 8px 20px rgba(42, 31, 20, 0.08);
+    }
+    .pkg-icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 10px;
+      background: var(--kraft-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.35rem;
+      flex-shrink: 0;
+    }
+    .pkg-text h4 {
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--ink);
+      margin-bottom: 2px;
+      letter-spacing: -0.01em;
+    }
+    .pkg-text p {
+      font-size: 0.74rem;
+      color: var(--ink-muted);
+    }
+    /* ===== INFO STRIP ===== */
+    .info-strip {
+      background: var(--card);
+      padding: 22px 24px;
+      border-bottom: 1px solid var(--border);
+    }
+    .info-strip-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .info-strip-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.85rem;
+      color: var(--ink-soft);
+    }
+    .info-strip-item strong { color: var(--ink); font-weight: 700; }
+    .info-strip-icon { color: var(--box); }
+    /* ===== SECTIONS ===== */
+    section { padding: 100px 24px; }
+    .container { max-width: 1200px; margin: 0 auto; }
+    .section-head {
+      max-width: 760px;
+      margin-bottom: 64px;
+    }
+    .section-label {
+      font-size: 0.7rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--box);
+      margin-bottom: 16px;
+      font-weight: 800;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .section-label::before {
+      content: "";
+      width: 24px;
+      height: 3px;
+      background: var(--box);
+      border-radius: 2px;
+    }
+    .section-title {
+      font-size: clamp(1.8rem, 4.5vw, 2.7rem);
+      margin-bottom: 18px;
+      color: var(--ink);
+    }
+    .section-title span { color: var(--box); }
+    .section-intro {
+      color: var(--ink-soft);
+      font-size: 1rem;
+      line-height: 1.7;
+      max-width: 640px;
+    }
+    /* ===== ABOUT ===== */
+    #about { background: var(--card); }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .about-visual {
+      aspect-ratio: 4 / 5;
+      border-radius: 16px;
+      background:
+        linear-gradient(135deg, #8b5a2b, #6b421a),
+        radial-gradient(circle at 30% 30%, rgba(212, 160, 23, 0.3), transparent 60%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 7rem;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 20px 20px 0 var(--kraft-soft);
+    }
+    .about-visual::after {
+      content: "📦";
+      opacity: 0.55;
+      filter: sepia(1) brightness(1.5);
+    }
+    .about-text p {
+      color: var(--ink-soft);
+      margin-bottom: 18px;
+      font-size: 0.98rem;
+      line-height: 1.8;
+    }
+    .about-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 32px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+    }
+    .about-stat strong {
+      display: block;
+      font-family: 'Archivo', sans-serif;
+      font-size: 1.9rem;
+      color: var(--box);
+      font-weight: 900;
+      line-height: 1;
+      margin-bottom: 6px;
+      letter-spacing: -0.02em;
+    }
+    .about-stat span {
+      font-size: 0.72rem;
+      color: var(--ink-muted);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    /* ===== CATEGORIES ===== */
+    #products { background: var(--bg); }
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .prod-card {
+      background: var(--card);
+      border-radius: 14px;
+      padding: 30px 26px;
+      border: 1px solid var(--border);
+      transition: all 0.25s;
+      position: relative;
+      overflow: hidden;
+    }
+    .prod-card::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 4px;
+      background: var(--box);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s;
+    }
+    .prod-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 30px rgba(42, 31, 20, 0.08);
+      border-color: var(--border-strong);
+    }
+    .prod-card:hover::before { transform: scaleX(1); }
+    .prod-icon {
+      width: 54px;
+      height: 54px;
+      border-radius: 12px;
+      background: var(--kraft-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+    .prod-card h3 {
+      font-family: 'Inter', sans-serif;
+      font-weight: 800;
+      font-size: 1.05rem;
+      letter-spacing: -0.01em;
+      margin-bottom: 10px;
+      color: var(--ink);
+    }
+    .prod-card p {
+      font-size: 0.86rem;
+      color: var(--ink-soft);
+      line-height: 1.6;
+    }
+    /* ===== WHO WE SUPPLY ===== */
+    #supply {
+      background: var(--ink);
+      color: var(--white);
+    }
+    #supply .section-label {
+      color: var(--kraft);
+    }
+    #supply .section-label::before { background: var(--kraft); }
+    #supply .section-title { color: var(--white); }
+    #supply .section-title span { color: var(--kraft); }
+    #supply .section-intro { color: rgba(255,255,255,0.75); }
+    .supply-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+    }
+    .supply-item {
+      padding: 32px 26px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 14px;
+      transition: all 0.25s;
+    }
+    .supply-item:hover {
+      background: rgba(255,255,255,0.07);
+      border-color: rgba(184, 132, 90, 0.4);
+      transform: translateY(-4px);
+    }
+    .supply-icon {
+      font-size: 2rem;
+      margin-bottom: 16px;
+    }
+    .supply-item h3 {
+      font-family: 'Inter', sans-serif;
+      font-weight: 800;
+      font-size: 1rem;
+      letter-spacing: -0.01em;
+      color: var(--white);
+      margin-bottom: 10px;
+    }
+    .supply-item p {
+      font-size: 0.86rem;
+      color: rgba(255,255,255,0.65);
+      line-height: 1.6;
+    }
+    /* ===== WHY US ===== */
+    #why { background: var(--card); }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 28px;
+    }
+    .why-item {
+      padding: 32px 28px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      transition: all 0.25s;
+    }
+    .why-item:hover {
+      transform: translateY(-4px);
+      border-color: var(--box);
+      background: var(--kraft-pale);
+    }
+    .why-num {
+      font-family: 'Archivo', sans-serif;
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--box);
+      margin-bottom: 16px;
+      line-height: 1;
+    }
+    .why-item h3 {
+      font-family: 'Inter', sans-serif;
+      font-weight: 800;
+      font-size: 1.05rem;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+      margin-bottom: 10px;
+    }
+    .why-item p {
+      font-size: 0.88rem;
+      color: var(--ink-soft);
+      line-height: 1.65;
+    }
+    /* ===== REVIEWS ===== */
+    #reviews { background: var(--bg); }
+    .reviews-top {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      padding: 40px;
+      background: var(--card);
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      margin-bottom: 48px;
+    }
+    .reviews-score {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+    .reviews-score-num {
+      font-family: 'Archivo', sans-serif;
+      font-size: 4rem;
+      font-weight: 900;
+      color: var(--box);
+      line-height: 1;
+      letter-spacing: -0.03em;
+    }
+    .reviews-score-meta {
+      font-size: 0.85rem;
+      color: var(--ink-soft);
+      line-height: 1.6;
+    }
+    .reviews-score-stars {
+      color: var(--gold);
+      font-size: 1.2rem;
+      letter-spacing: 3px;
+      display: block;
+      margin-bottom: 6px;
+    }
+    .reviews-divider {
+      width: 1px;
+      height: 70px;
+      background: var(--border-strong);
+    }
+    .reviews-summary {
+      font-size: 0.95rem;
+      color: var(--ink-soft);
+      max-width: 480px;
+      line-height: 1.7;
+    }
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+    .review-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px 28px;
+      transition: all 0.25s;
+    }
+    .review-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 30px rgba(42, 31, 20, 0.06);
+      border-color: var(--border-strong);
+    }
+    .review-quote {
+      color: var(--box);
+      font-size: 2.8rem;
+      font-family: Georgia, serif;
+      line-height: 1;
+      margin-bottom: 12px;
+      opacity: 0.5;
+    }
+    .review-card .stars {
+      color: var(--gold);
+      font-size: 0.95rem;
+      letter-spacing: 3px;
+      margin-bottom: 16px;
+      display: block;
+    }
+    .review-card p {
+      font-size: 0.98rem;
+      line-height: 1.7;
+      color: var(--ink);
+      margin-bottom: 22px;
+      font-style: italic;
+    }
+    .review-author {
+      font-size: 0.72rem;
+      color: var(--ink-muted);
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+    }
+    /* ===== CONTACT ===== */
+    #contact { background: var(--card); }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+    .contact-block { margin-bottom: 32px; }
+    .contact-block h4 {
+      font-family: 'Inter', sans-serif;
+      font-weight: 800;
+      font-size: 1.05rem;
+      letter-spacing: -0.01em;
+      margin-bottom: 10px;
+      color: var(--ink);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .contact-block h4 span {
+      color: var(--box);
+      font-size: 1.1rem;
+    }
+    .contact-block p, .contact-block a {
+      color: var(--ink-soft);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+    .contact-block a { font-weight: 600; }
+    .contact-block a:hover { color: var(--box); }
+    .contact-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+    .contact-actions .btn { padding: 14px 26px; font-size: 0.85rem; }
+    .btn-dark {
+      background: var(--box);
+      color: var(--white);
+    }
+    .btn-dark:hover {
+      background: var(--kraft-dim);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(139, 90, 43, 0.3);
+    }
+    .map-embed {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: var(--bg-warm);
+    }
+    .map-embed iframe { width: 100%; height: 100%; border: 0; }
+    /* ===== CTA FINAL ===== */
+    .cta-final {
+      background: linear-gradient(135deg, var(--box) 0%, var(--kraft-dim) 100%);
+      color: var(--white);
+      text-align: center;
+      padding: 100px 24px;
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-final::before {
+      content: "";
+      position: absolute;
+      top: -50%; left: 50%;
+      transform: translateX(-50%);
+      width: 900px; height: 900px;
+      background: radial-gradient(circle, rgba(250, 241, 232, 0.12), transparent 60%);
+      pointer-events: none;
+    }
+    .cta-final-inner {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .cta-final h2 {
+      font-size: clamp(1.9rem, 5vw, 3rem);
+      margin-bottom: 18px;
+      color: var(--white);
+      letter-spacing: -0.02em;
+    }
+    .cta-final p {
+      color: rgba(255,255,255,0.9);
+      margin-bottom: 36px;
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+    .cta-final-actions {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn-white {
+      background: var(--white);
+      color: var(--box);
+      box-shadow: 0 6px 24px rgba(0,0,0,0.15);
+    }
+    .btn-white:hover {
+      background: #fff;
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+    }
+    .btn-dark-outline {
+      background: transparent;
+      color: var(--white);
+      border: 1.5px solid rgba(255,255,255,0.4);
+    }
+    .btn-dark-outline:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: rgba(255,255,255,0.8);
+    }
+    /* ===== FOOTER ===== */
+    footer {
+      background: #1a120a;
+      color: rgba(255,255,255,0.6);
+      padding: 60px 24px 30px;
+      text-align: center;
+    }
+    .footer-logo {
+      font-family: 'Archivo', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 900;
+      color: var(--white);
+      margin-bottom: 6px;
+      letter-spacing: -0.02em;
+    }
+    .footer-tag {
+      font-size: 0.7rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--kraft);
+      margin-bottom: 24px;
+      font-weight: 700;
+    }
+    .footer-links {
+      display: flex;
+      gap: 26px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+    .footer-links a {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.6);
+      transition: color 0.2s;
+      font-weight: 500;
+    }
+    .footer-links a:hover { color: var(--kraft); }
+    .footer-copy {
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.3);
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 22px;
+      right: 22px;
+      z-index: 90;
+      background: var(--box);
+      color: var(--white);
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      box-shadow: 0 6px 24px rgba(139, 90, 43, 0.4);
+      transition: transform 0.2s;
+    }
+    .whatsapp-float:hover { transform: scale(1.08); }
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+      .hero { padding: 120px 20px 60px; }
+      .about-grid { grid-template-columns: 1fr; gap: 40px; }
+      .about-visual { aspect-ratio: 4 / 3; box-shadow: 12px 12px 0 var(--kraft-soft); }
+      .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        flex-direction: column;
+        background: var(--card);
+        padding: 22px;
+        gap: 18px;
+        border-bottom: 1px solid var(--border);
+        align-items: flex-start;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      }
+      .nav-links.open { display: flex; }
+      .menu-toggle { display: block; }
+      section { padding: 60px 20px; }
+      .hero-trust { gap: 20px; font-size: 0.78rem; }
+      .reviews-top { padding: 28px; flex-direction: column; align-items: flex-start; gap: 24px; }
+      .reviews-divider { display: none; }
+      .info-strip-inner { flex-direction: column; align-items: flex-start; gap: 12px; }
+    }
+    @media (max-width: 480px) {
+      .hero h1 { font-size: 2.1rem; }
+      .section-title { font-size: 1.7rem; }
+      .about-stats { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <!-- ===== NAV ===== -->
+  <nav>
+    <div class="inner">
+      <a href="#top" class="nav-logo">
+        <div class="logo-mark">MW</div>
+        <div class="logo-text">
+          <strong>MW Packaging</strong>
+          <small>Mahikeng • Industrial</small>
+        </div>
+      </a>
+      <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">☰</button>
+      <div class="nav-links">
+        <a href="#about" onclick="document.querySelector('.nav-links').classList.remove('open')">About</a>
+        <a href="#products" onclick="document.querySelector('.nav-links').classList.remove('open')">Products</a>
+        <a href="#supply" onclick="document.querySelector('.nav-links').classList.remove('open')">Who We Supply</a>
+        <a href="#reviews" onclick="document.querySelector('.nav-links').classList.remove('open')">Reviews</a>
+        <a href="#contact" onclick="document.querySelector('.nav-links').classList.remove('open')">Contact</a>
+        <a href="tel:0712834789" class="nav-cta">Call Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="top">
+    <div class="hero-grid">
+      <div>
+        <div class="hero-tag">Packaging Supply Store • Mahikeng</div>
+        <h1>Everything you need to <span>pack, protect & ship</span>.</h1>
+        <p class="hero-sub">
+          Mahikeng's trusted packaging supplier for businesses. Boxes, tape, bubble wrap, poly bags, and everything else you need to get your products out the door.
+        </p>
+        <div class="hero-actions">
+          <a href="tel:0712834789" class="btn btn-primary">📞 Call for a Quote</a>
+          <a href="#products" class="btn btn-outline">See What We Stock</a>
+        </div>
+        <div class="hero-trust">
+          <div class="hero-trust-item">
+            <span class="hero-trust-icon hero-stars">★★★★★</span>
+            <span><strong>4.4</strong> on Google (25 reviews)</span>
+          </div>
+          <div class="hero-trust-item">
+            <span class="hero-trust-icon">📦</span>
+            <span><strong>Full range</strong> of packaging</span>
+          </div>
+          <div class="hero-trust-item">
+            <span class="hero-trust-icon">🏭</span>
+            <span><strong>Industrial Sites</strong>, Mahikeng</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="pkg-card">
+          <div class="pkg-icon">📦</div>
+          <div class="pkg-text">
+            <h4>Boxes & Cartons</h4>
+            <p>Shipping, moving, custom sizes</p>
+          </div>
+        </div>
+        <div class="pkg-card">
+          <div class="pkg-icon">🎁</div>
+          <div class="pkg-text">
+            <h4>Bubble Wrap & Foam</h4>
+            <p>Protection for fragile goods</p>
+          </div>
+        </div>
+        <div class="pkg-card">
+          <div class="pkg-icon">📏</div>
+          <div class="pkg-text">
+            <h4>Tape & Strapping</h4>
+            <p>Packing tape, stretch film, ties</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INFO STRIP ===== -->
+  <div class="info-strip">
+    <div class="info-strip-inner">
+      <div class="info-strip-item">
+        <span class="info-strip-icon">📍</span>
+        <span><strong>4057 First St</strong>, Industrial Sites, Mahikeng</span>
+      </div>
+      <div class="info-strip-item">
+        <span class="info-strip-icon">📞</span>
+        <span><strong>071 283 4789</strong></span>
+      </div>
+      <div class="info-strip-item">
+        <span class="info-strip-icon">⭐</span>
+        <span><strong>4.4 ★</strong> · 25 Google reviews</span>
+      </div>
+      <div class="info-strip-item">
+        <span class="info-strip-icon">💬</span>
+        <span>"You'll never be disappointed"</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual"></div>
+        <div class="about-text">
+          <div class="section-label">About MW Packaging</div>
+          <h2 class="section-title">Supplying Mahikeng businesses for <span>years</span>.</h2>
+          <p>
+            MW Packaging is a locally owned and operated packaging supply store based in Mahikeng's Industrial Sites area. We serve a wide range of businesses across the region — from e-commerce sellers packing their first orders, to established couriers and manufacturers with bulk requirements.
+          </p>
+          <p>
+            Whether you need a single roll of tape or a full pallet of boxes, our team is here to help you find the right packaging for your product. Fast service, fair pricing, and packaging that does the job.
+          </p>
+          <div class="about-stats">
+            <div class="about-stat">
+              <strong>4.4★</strong>
+              <span>Google Rating</span>
+            </div>
+            <div class="about-stat">
+              <strong>25</strong>
+              <span>Google Reviews</span>
+            </div>
+            <div class="about-stat">
+              <strong>Full</strong>
+              <span>Packaging range</span>
+            </div>
+            <div class="about-stat">
+              <strong>B2B</strong>
+              <span>Business focused</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCTS ===== -->
+  <section id="products">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">What We Stock</span>
+        <h2 class="section-title">Packaging for every <span>business need</span>.</h2>
+        <p class="section-intro">
+          From the smallest envelope to the largest moving box — if it's packaging, we probably have it.
+        </p>
+      </div>
+      <div class="products-grid">
+        <div class="prod-card">
+          <div class="prod-icon">📦</div>
+          <h3>Boxes & Cartons</h3>
+          <p>Shipping boxes, moving boxes, and cartons in a range of sizes and strengths.</p>
+        </div>
+        <div class="prod-card">
+          <div class="prod-icon">🫧</div>
+          <h3>Bubble Wrap & Foam</h3>
+          <p>Protective materials for fragile, delicate, or high-value products.</p>
+        </div>
+        <div class="prod-card">
+          <div class="prod-icon">📏</div>
+          <h3>Tape & Strapping</h3>
+          <p>Packing tape, masking tape, strapping, banding, and everything to seal a package.</p>
+        </div>
+        <div class="prod-card">
+          <div class="prod-icon">📮</div>
+          <h3>Courier & Poly Bags</h3>
+          <p>Poly mailers, courier bags, plastic bags, and envelopes for shipping.</p>
+        </div>
+        <div class="prod-card">
+          <div class="prod-icon">🏷️</div>
+          <h3>Labels & Tags</h3>
+          <p>Shipping labels, barcode labels, and tags for tracking and branding.</p>
+        </div>
+        <div class="prod-card">
+          <div class="prod-icon">🎞️</div>
+          <h3>Stretch & Shrink Film</h3>
+          <p>Pallet wrap, stretch film, and shrink wrap for bulk orders and transport.</p>
+        </div>
+        <div class="prod-card">
+          <div class="prod-icon">📄</div>
+          <h3>Void Fill</h3>
+          <p>Packing paper, shredded paper, and loose fill to keep items secure inside a box.</p>
+        </div>
+        <div class="prod-card">
+          <div class="prod-icon">✂️</div>
+          <h3>Packing Accessories</h3>
+          <p>Scissors, tape dispensers, markers, and every other tool for the packing station.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHO WE SUPPLY ===== -->
+  <section id="supply">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">Who We Supply</span>
+        <h2 class="section-title">Trusted by businesses <span>across Mahikeng</span>.</h2>
+        <p class="section-intro">
+          Whether you're packing one order or a thousand, we've got you covered.
+        </p>
+      </div>
+      <div class="supply-grid">
+        <div class="supply-item">
+          <div class="supply-icon">🛒</div>
+          <h3>E-Commerce Sellers</h3>
+          <p>Selling online? We'll help you pack orders fast, safe, and professionally.</p>
+        </div>
+        <div class="supply-item">
+          <div class="supply-icon">🚚</div>
+          <h3>Couriers & Logistics</h3>
+          <p>Bulk packaging for transport and delivery businesses.</p>
+        </div>
+        <div class="supply-item">
+          <div class="supply-icon">🏪</div>
+          <h3>Retailers</h3>
+          <p>Bags, boxes, and packaging for shops and small businesses.</p>
+        </div>
+        <div class="supply-item">
+          <div class="supply-icon">🍱</div>
+          <h3>Food Businesses</h3>
+          <p>Food-safe packaging for takeaways and caterers.</p>
+        </div>
+        <div class="supply-item">
+          <div class="supply-icon">🏭</div>
+          <h3>Manufacturers</h3>
+          <p>Bulk packaging solutions for products heading to market.</p>
+        </div>
+        <div class="supply-item">
+          <div class="supply-icon">🏠</div>
+          <h3>Individuals</h3>
+          <p>Moving house or shipping a gift? We stock smaller quantities too.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY US ===== -->
+  <section id="why">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">Why MW Packaging</span>
+        <h2 class="section-title">Local, reliable, <span>always stocked</span>.</h2>
+        <p class="section-intro">
+          Our customers keep coming back because we do the simple things right.
+        </p>
+      </div>
+      <div class="why-grid">
+        <div class="why-item">
+          <div class="why-num">01</div>
+          <h3>Full Range Under One Roof</h3>
+          <p>From boxes to bubble wrap to tape — get everything in one stop, no running around.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-num">02</div>
+          <h3>Bulk & Small Quantities</h3>
+          <p>Whether you need one roll or a pallet, we stock for both individuals and businesses.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-num">03</div>
+          <h3>Fast, Friendly Service</h3>
+          <p>Our team will help you find exactly what you need — no waiting, no fuss.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-num">04</div>
+          <h3>Trusted Locally</h3>
+          <p>4.4 stars from 25 Google reviews — we've built a reputation on reliability.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REVIEWS ===== -->
+  <section id="reviews">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">Customer Reviews</span>
+        <h2 class="section-title">What our <span>customers say</span>.</h2>
+      </div>
+      <div class="reviews-top">
+        <div class="reviews-score">
+          <div class="reviews-score-num">4.4</div>
+          <div class="reviews-score-meta">
+            <span class="reviews-score-stars">★★★★☆</span>
+            Based on <strong>25 Google reviews</strong>
+          </div>
+        </div>
+        <div class="reviews-divider"></div>
+        <div class="reviews-summary">
+          Known in Mahikeng for reliable service and a full range of packaging supplies. If you're tired of driving between shops looking for boxes or tape — this is where you stop.
+        </div>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-quote">"</div>
+          <span class="stars">★★★★★</span>
+          <p>You'll never be disappointed 😉</p>
+          <div class="review-author">— Google Review</div>
+        </div>
+        <div class="review-card">
+          <div class="review-quote">"</div>
+          <span class="stars">★★★★★</span>
+          <p>Reliable packaging supplier — everything our business needs in one place.</p>
+          <div class="review-author">— Google Review</div>
+        </div>
+        <div class="review-card">
+          <div class="review-quote">"</div>
+          <span class="stars">★★★★☆</span>
+          <p>Good selection and friendly service. Will be back for our next order.</p>
+          <div class="review-author">— Google Review</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Let's talk <span>packaging</span>.</h2>
+        <p class="section-intro">
+          Give us a call for pricing, availability, or bulk orders. We'll help you find the right packaging for your business.
+        </p>
+      </div>
+      <div class="contact-grid">
+        <div>
+          <div class="contact-block">
+            <h4><span>📍</span> Visit Our Store</h4>
+            <p>4057 First St<br>Industrial Sites<br>Mahikeng, 2745</p>
+          </div>
+          <div class="contact-block">
+            <h4><span>📞</span> Call Us</h4>
+            <p><a href="tel:0712834789">071 283 4789</a></p>
+          </div>
+          <div class="contact-block">
+            <h4><span>💼</span> Business Enquiries</h4>
+            <p>Supplying e-commerce, retail, food, couriers, and manufacturers across Mahikeng and surrounding areas.</p>
+          </div>
+          <div class="contact-actions">
+            <a href="tel:0712834789" class="btn btn-dark">📞 Call Now</a>
+            <a href="https://www.google.com/maps?q=MW+Packaging,+4057+First+St,+Industrial+Sites,+Mahikeng,+2745" class="btn btn-outline" target="_blank" rel="noopener">🗺️ Get Directions</a>
+          </div>
+        </div>
+        <div class="map-embed">
+          <iframe
+            src="https://www.google.com/maps?q=MW+Packaging,+4057+First+St,+Industrial+Sites,+Mahikeng,+2745&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="MW Packaging Mahikeng location">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA FINAL ===== -->
+  <section class="cta-final">
+    <div class="cta-final-inner">
+      <h2>Ready to stock up on packaging?</h2>
+      <p>
+        Call us for a quote, or visit our store in Mahikeng's Industrial Sites.
+      </p>
+      <div class="cta-final-actions">
+        <a href="tel:0712834789" class="btn btn-white">📞 071 283 4789</a>
+        <a href="https://www.google.com/maps?q=MW+Packaging,+4057+First+St,+Industrial+Sites,+Mahikeng,+2745" class="btn btn-dark-outline" target="_blank" rel="noopener">🗺️ Get Directions</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-logo">MW Packaging</div>
+    <div class="footer-tag">Packaging Supply • Mahikeng</div>
+    <div class="footer-links">
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#supply">Who We Supply</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+      <a href="tel:0712834789">071 283 4789</a>
+    </div>
+    <div class="footer-copy">
+      © 2026 MW Packaging. All rights reserved.
+    </div>
+  </footer>
+
+  <a href="tel:0712834789" class="whatsapp-float" aria-label="Call MW Packaging">
+    📞
+  </a>
+</body>
+</html>
